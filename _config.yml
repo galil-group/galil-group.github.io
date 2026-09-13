@@ -11,8 +11,7 @@ contact_note: >
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Research group of Mahmoud Abdelgalil, Department of Mechanical and Aerospace Engineering,
   University at Buffalo (SUNY). Geometric control, optimal transport, and learning for autonomous systems.
-footer_text: >
-  &copy; Mahmoud Abdelgalil, University at Buffalo.
+footer_text:
 keywords: control theory, optimal transport, geometric control, autonomous systems, multi-agent systems, University at Buffalo
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🧭 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
