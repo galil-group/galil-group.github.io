@@ -1,9 +1,6 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
-
-"PhysRev":
-  url: https://journals.aps.org/
-
-"Vision":
-  color: "#009f36"
+# Venue badges on the publications page. Key: the abbr={...} value of a papers.bib entry.
+#
+# "ACC":
+#   url: https://acc2026.a2c2.org/
+#   color: "#00369f"
+{}
