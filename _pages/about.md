@@ -3,8 +3,6 @@ layout: about
 title: about
 permalink: /
 show_title: true
-subtitle: >
-  Department of Mechanical and Aerospace Engineering, University at Buffalo (SUNY)
 
 profile:
   align: right
@@ -12,6 +10,8 @@ profile:
   image_circular: false
   more_info: >
     <p>Mahmoud Abdelgalil</p>
+    <p>Department of Mechanical and Aerospace Engineering</p>
+    <p>University at Buffalo (SUNY)</p>
     <p>1006 Furnas Hall</p>
     <p>Buffalo, NY 14260</p>
     <p>maabdelg [at] buffalo [dot] edu</p>
@@ -30,8 +30,8 @@ latest_posts:
   limit: 3
 ---
 
-Our group studies how ensembles of dynamical systems, from single robots to large collectives, can be steered, coordinated, and made robust in the presence of uncertainty, adversaries, and limited information. Our work draws on geometric control theory, optimal mass transport, and stochastic optimization, and it is aimed at autonomous systems that must act reliably in the physical world.
+I am an Assistant Professor in the Department of Mechanical and Aerospace Engineering at the University at Buffalo (SUNY), where I joined the faculty in Fall 2026. Before coming to Buffalo, I was a postdoctoral researcher at UC San Diego, and I received my PhD from UC Irvine. More about my background is on the [team page](/team/).
 
-The group is led by [Mahmoud Abdelgalil](/team/), Assistant Professor in the Department of Mechanical and Aerospace Engineering at the University at Buffalo (SUNY).
+My group studies how ensembles of dynamical systems, from single robots to large collectives, can be steered, coordinated, and made robust in the presence of uncertainty, adversaries, and limited information. Our work draws on geometric control theory, optimal mass transport, and stochastic optimization, and it is aimed at autonomous systems that must act reliably in the physical world.
 
-**We are recruiting PhD students.** If you have a strong mathematical background and an interest in control, optimization, or learning for autonomous systems, see the [team page](/team/) for details on how to apply.
+**I am recruiting PhD students.** If you have a strong mathematical background and an interest in control, optimization, or learning for autonomous systems, see the [team page](/team/) for details on how to apply.
