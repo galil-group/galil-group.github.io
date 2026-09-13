@@ -48,7 +48,9 @@ cv:
         date: 2018-06
 
     Invited Talks and Seminars:
+      - bullet: "Conference presentation, MTNS 2026, Waterloo · _August 2026_"
       - bullet: "SIAM Conference on Uncertainty Quantification (invited talk) · _March 2026_"
+      - bullet: "MAE Department Seminar, University at Buffalo · _March 2026_"
       - bullet: "Applied and Computational Mathematics Seminar, Auburn University · _September 2025_"
       - bullet: "Aerospace Engineering Department Seminar, Georgia Institute of Technology · _September 2025_"
       - bullet: "MAE Department Seminar, University of California, Irvine · _April 2025_"
