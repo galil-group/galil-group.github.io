@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://galil-group.github.io/sitemap.xml
+Sitemap: https://mahmoudabdelgalil.github.io/sitemap.xml
