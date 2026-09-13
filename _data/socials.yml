@@ -7,4 +7,4 @@ research_gate_profile: Mahmoud-Abdelgalil
 linkedin_username: maabdelg
 # github_username: # TODO: lab or personal GitHub username
 # orcid_id: # TODO
-rss_icon: false
+# No rss_icon key: jekyll-socials shows the RSS icon whenever the key exists, even when set to false.
