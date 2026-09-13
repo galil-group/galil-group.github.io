@@ -23,7 +23,10 @@
     #navbar .navbar-nav .sidebar-social a:hover { color: var(--global-theme-color); }
   }
   @media (max-width: 991.98px) {
-    #navbar .navbar-nav .sidebar-social { display: none; }
+    /* Top-bar mode: icons next to the menu links (inside the collapsed menu on phones). */
+    #navbar .navbar-nav .sidebar-social { display: flex; align-items: center; gap: 0.6rem; padding: 0 0.5rem; font-size: 1.05rem; }
+    #navbar .navbar-nav .sidebar-social a { color: var(--global-text-color); }
+    #navbar .navbar-nav .sidebar-social a:hover { color: var(--global-theme-color); }
   }
   /* No footer: the theme's footer only holds the copyright line. */
   footer[role="contentinfo"] { display: none; }
