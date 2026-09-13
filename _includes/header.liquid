@@ -6,7 +6,7 @@
   2. The first name is not bold (upstream wraps it in <span class="font-weight-bold">).
   3. The style block below turns the top navbar into a fixed left sidebar on screens at least 992px wide
      (name kept on one line at 18.5px; social icons listed under the menu links); narrower screens keep the
-     top bar with its menu button, and the icons stay under the photo on the home page there.
+     top bar with its menu button, and the icons sit in the top bar next to the links (inside the menu on phones).
   4. The style block also hides the site footer (the theme's "© Copyright" bar) on every page.
   When bumping al_folio_core, diff this file against the gem's copy.
 {% endcomment %}
@@ -29,7 +29,10 @@
     #navbar .navbar-nav .sidebar-social a:hover { color: var(--global-theme-color); }
   }
   @media (max-width: 991.98px) {
-    #navbar .navbar-nav .sidebar-social { display: none; }
+    /* Top-bar mode: icons next to the menu links (inside the collapsed menu on phones). */
+    #navbar .navbar-nav .sidebar-social { display: flex; align-items: center; gap: 0.6rem; padding: 0 0.5rem; font-size: 1.05rem; }
+    #navbar .navbar-nav .sidebar-social a { color: var(--global-text-color); }
+    #navbar .navbar-nav .sidebar-social a:hover { color: var(--global-theme-color); }
   }
   /* No footer: the theme's footer only holds the copyright line. */
   footer[role="contentinfo"] { display: none; }
