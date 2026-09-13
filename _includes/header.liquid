@@ -8,6 +8,8 @@
      (name kept on one line at 18.5px; social icons listed under the menu links); narrower screens keep the
      top bar with its menu button, and the icons sit in the top bar next to the links (inside the menu on phones).
   4. The style block also hides the site footer (the theme's "© Copyright" bar) on every page.
+  5. The theme toggle is outside the collapsible menu (upstream puts it in the menu list), so on phones it
+     sits in the top bar next to the menu button; in the sidebar it is still at the bottom.
   When bumping al_folio_core, diff this file against the gem's copy.
 {% endcomment %}
 <style>
@@ -21,7 +23,7 @@
     #navbar .navbar-nav { flex-direction: column; align-items: flex-start; margin-left: 0 !important; width: 100%; height: 100%; text-align: left; }
     #navbar .navbar-nav .nav-item { width: 100%; text-align: left; }
     #navbar .navbar-nav .nav-link { padding: 0.35rem 0; text-align: left; }
-    #navbar .navbar-nav .toggle-container { margin-top: auto; }
+    #navbar .nav-theme-toggle { margin-top: 0.75rem; } /* below the menu, at the bottom of the sidebar */
     #progress { position: fixed !important; top: 0 !important; left: 210px; width: calc(100% - 210px); }
     #navbar .navbar-brand { white-space: nowrap; font-size: 18.5px; } /* fits the 169px inside the sidebar */
     #navbar .navbar-nav .sidebar-social { display: flex; gap: 0.9rem; width: 100%; margin-top: 1.25rem; font-size: 1.25rem; }
@@ -39,7 +41,13 @@
        through) and give the icons their own row, aligned with the links under a divider. */
     #navbar.navbar { opacity: 1; }
     #navbar .navbar-nav .sidebar-social { padding: 0.75rem 0 0.5rem; margin-top: 0.5rem; border-top: 1px solid var(--global-divider-color); gap: 1.4rem; font-size: 1.35rem; }
+    /* Top row: name, theme toggle, menu button; the opened menu wraps below. */
+    #navbar .navbar-brand { margin-right: auto; }
+    #navbar .nav-theme-toggle { order: 1; margin-right: 0.5rem; }
+    #navbar .navbar-toggler { order: 2; }
+    #navbar .navbar-collapse { order: 3; }
   }
+  #navbar .nav-theme-toggle { display: flex; align-items: center; }
   /* No footer: the theme's footer only holds the copyright line. */
   footer[role="contentinfo"] { display: none; }
 </style>
@@ -164,18 +172,18 @@
           {% endif %}
           <!-- Social icons: shown only in sidebar mode (see style block above) -->
           <li class="nav-item sidebar-social">{% social_links %}</li>
-          {% if site.enable_darkmode %}
-            <!-- Toogle theme mode -->
-            <li class="toggle-container">
-              <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme">
-                <i class="fa-half-sun-moon" id="light-toggle-system"></i>
-                <i class="fa-solid fa-moon" id="light-toggle-dark"></i>
-                <i class="fa-solid fa-sun" id="light-toggle-light"></i>
-              </button>
-            </li>
-          {% endif %}
         </ul>
       </div>
+      {% if site.enable_darkmode %}
+        <!-- Toggle theme mode: outside the collapsible menu, so on phones it stays next to the menu button -->
+        <div class="toggle-container nav-theme-toggle">
+          <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme">
+            <i class="fa-half-sun-moon" id="light-toggle-system"></i>
+            <i class="fa-solid fa-moon" id="light-toggle-dark"></i>
+            <i class="fa-solid fa-sun" id="light-toggle-light"></i>
+          </button>
+        </div>
+      {% endif %}
     </div>
   </nav>
   {% if site.enable_progressbar %}
