@@ -5,7 +5,7 @@ Research-group website of Mahmoud Abdelgalil (UB MAE), built on al-folio v1 (Jek
 ## How this repo is put together
 
 - All runtime (layouts, includes, Sass, JS, Liquid tags) comes from version-pinned `al_*` gems in `Gemfile`; `theme: al_folio_core` in `_config.yml`. This repo holds config and content only.
-- Two intentional local overrides of `al_folio_core` files: `_layouts/about.liquid` (lets the home page hide its title, and renders the social icons under the photo instead of at the bottom) and `_includes/header.liquid` (shows the name in the navbar on the home page too, where upstream hides it, and drops upstream's bold first name). Avoid adding others; when bumping `al_folio_core`, diff both against the gem's versions.
+- Two intentional local overrides of `al_folio_core` files: `_layouts/about.liquid` (lets the home page hide its title, and renders the social icons under the photo instead of at the bottom) and `_includes/header.liquid` (shows the name in the navbar on the home page too, where upstream hides it, drops upstream's bold first name, and turns the navbar into a fixed left sidebar on screens at least 992px wide). Avoid adding others; when bumping `al_folio_core`, diff both against the gem's versions.
 - Upstream docs (config reference, plugin ownership, troubleshooting): https://github.com/alshedivat/al-folio/tree/main/docs
 
 ## Things that fail silently
