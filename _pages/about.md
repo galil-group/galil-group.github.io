@@ -39,6 +39,8 @@ latest_posts:
   .profile .social .contact-icons { font-size: 32px; } /* social icons under the photo (theme default 64px) */
   /* Next to the sidebar navigation (>= 992px) the photo column is narrower, so scale the font with the remaining width. */
   @media (min-width: 992px) { .profile .more-info { font-size: min(13px, calc((100vw - 240px) * 0.0146)); } }
+  /* With the sidebar (>= 992px) the social icons are in the navigation, so hide the copy under the photo. */
+  @media (min-width: 992px) { .profile .social { display: none; } }
 </style>
 
 I am an Assistant Professor of Mechanical and Aerospace Engineering at the University at Buffalo (SUNY), where I joined the faculty in Fall 2026. Before coming to Buffalo, I was a postdoctoral researcher at UC San Diego, and I received my PhD from UC Irvine. More about my background is on the [team page](/team/).

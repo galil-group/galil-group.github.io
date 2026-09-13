@@ -4,8 +4,9 @@
   1. It is rendered on every page. Upstream wraps it in `if page.permalink != '/'`, hiding it on the home page
      and showing optional navbar social icons there instead.
   2. The first name is not bold (upstream wraps it in <span class="font-weight-bold">).
-  3. The style block below turns the top navbar into a fixed left sidebar on screens at least 992px wide;
-     narrower screens keep the top bar with its menu button.
+  3. The style block below turns the top navbar into a fixed left sidebar on screens at least 992px wide
+     (name kept on one line at 18.5px; social icons listed under the menu links); narrower screens keep the
+     top bar with its menu button, and the icons stay under the photo on the home page there.
   When bumping al_folio_core, diff this file against the gem's copy.
 {% endcomment %}
 <style>
@@ -22,6 +23,13 @@
     #navbar .navbar-nav .toggle-container { margin-top: auto; }
     footer.fixed-bottom { left: 210px; }
     #progress { position: fixed !important; top: 0 !important; left: 210px; width: calc(100% - 210px); }
+    #navbar .navbar-brand { white-space: nowrap; font-size: 18.5px; } /* fits the 169px inside the sidebar */
+    #navbar .navbar-nav .sidebar-social { display: flex; gap: 0.9rem; width: 100%; margin-top: 1.25rem; font-size: 1.25rem; }
+    #navbar .navbar-nav .sidebar-social a { color: var(--global-text-color); }
+    #navbar .navbar-nav .sidebar-social a:hover { color: var(--global-theme-color); }
+  }
+  @media (max-width: 991.98px) {
+    #navbar .navbar-nav .sidebar-social { display: none; }
   }
 </style>
 <header>
@@ -143,6 +151,8 @@
               </button>
             </li>
           {% endif %}
+          <!-- Social icons: shown only in sidebar mode (see style block above) -->
+          <li class="nav-item sidebar-social">{% social_links %}</li>
           {% if site.enable_darkmode %}
             <!-- Toogle theme mode -->
             <li class="toggle-container">
