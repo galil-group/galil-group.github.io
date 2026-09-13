@@ -1,0 +1,59 @@
+cv:
+  name: Mahmoud Abdelgalil
+  label: Assistant Professor, Mechanical and Aerospace Engineering
+  email: mabdelga@buffalo.edu
+  location: Buffalo, NY
+  image: ""
+  summary: >
+    Director of the DARE Lab (Distributed, Adaptive, and Robust Embodied Intelligence) at the
+    University at Buffalo (SUNY). Research in geometric control, optimal mass transport,
+    stochastic optimization, and multi-agent systems for autonomy.
+
+  sections:
+    Appointments:
+      - company: University at Buffalo (SUNY)
+        position: Assistant Professor, Mechanical and Aerospace Engineering
+        location: Buffalo, NY
+        start_date: 2026-08
+        end_date: present
+        summary: Director, DARE Lab. Hired under the Disciplinary Excellence in Autonomy initiative.
+      - company: University of California, San Diego
+        position: Postdoctoral Scholar, Electrical and Computer Engineering
+        location: La Jolla, CA
+        start_date: 2023-04
+        end_date: 2026-06
+        summary: Advisor, Prof. Jorge I. Poveda.
+
+    Education:
+      - institution: University of California, Irvine
+        location: Irvine, CA
+        area: Mechanical and Aerospace Engineering
+        studyType: PhD
+        start_date: 2018
+        end_date: 2023
+        summary: Co-advised by Prof. Haithem Taha and Prof. Tryphon Georgiou.
+      - institution: University of California, Irvine
+        location: Irvine, CA
+        area: Mechanical and Aerospace Engineering
+        studyType: MSc
+        start_date: 2018
+        end_date: 2020
+      - institution: Zewail City of Science and Technology
+        location: Giza, Egypt
+        area: Engineering (inaugural cohort, cum laude)
+        studyType: BSc
+        start_date: 2014
+        end_date: 2018
+
+    Honors and Awards:
+      - title: Best Student Paper Award, American Control Conference
+        year: 2023
+      - title: Henry Samueli Fellowship
+        year: ""
+      - title: Holmes Endowed Fellowship
+        year: ""
+
+    Sponsored Research:
+      - title: DARPA DYNAMO program
+        year: ""
+        description: Contract HR0011-25-3-0225.
