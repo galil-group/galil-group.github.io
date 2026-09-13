@@ -17,6 +17,6 @@ profiles:
 
 ## Prospective students
 
-We are always on the lookout for outstanding PhD students. Ideal candidates have a strong background in mathematics (analysis, linear algebra, differential equations), an interest in control, optimization, or learning for autonomous systems, and comfort with at least one of MATLAB, Python, or C++.
+We are always on the lookout for motivated PhD students. Ideal candidates have a strong background in mathematics (analysis, linear algebra, differential equations), an interest in control, optimization, or learning for autonomous systems, and comfort with at least one of MATLAB, Python, or C++.
 
 If you're interested to join us, feel free to email a CV and a short description of your research interests to maabdelg [at] buffalo [dot] edu. Please use the subject line "\[Prospective PhD Student\]" and specify which of the group's research thrusts interests you.
