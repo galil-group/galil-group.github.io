@@ -34,17 +34,16 @@ Then open http://localhost:4000. Or, with Docker: `docker compose up`, then open
 
 ## Deployment (GitHub Pages)
 
-1. The repository is `mahmoudabdelgalil/mahmoudabdelgalil.github.io`. Because it is named `<owner>.github.io`, GitHub Pages serves it at the domain root (https://mahmoudabdelgalil.github.io/), which is why `baseurl:` is blank. (Under any other repository name the site is served at `/<repo>/` and needs `baseurl: /<repo>`.)
+1. The repository is `mahmoudabdelgalil/mahmoudabdelgalil.github.io`; the site is served at the root of its custom domain, https://www.maabdelg.me/, which is why `baseurl:` is blank.
 2. On every push to `main`/`master`, `.github/workflows/deploy.yml` builds the site and pushes the output to the `gh-pages` branch.
 3. In the repository settings under Pages, set the source to **Deploy from a branch → `gh-pages` / root**.
-4. In `_config.yml`, set `url:` to the final address and leave `baseurl:` blank.
+4. `url:` in `_config.yml` is the canonical address (`https://www.maabdelg.me`); keep `baseurl:` blank.
 
-### Custom domain
+### Custom domain (www.maabdelg.me)
 
-1. Register a domain (deferred until the group is named; a personal-name domain also works meanwhile).
-2. In the repository settings under Pages, add the custom domain; GitHub creates a `CNAME` file.
-3. At your registrar, add the four GitHub Pages A records for the apex domain and a `CNAME` record for `www`, per the GitHub Pages documentation. Enable "Enforce HTTPS".
-4. Update `url:` in `_config.yml` to the custom domain.
+- The `CNAME` file in the repo root holds `www.maabdelg.me`. It must stay in the repo: each deploy replaces the whole `gh-pages` branch, so a domain set only in the GitHub settings would be wiped. Keep it in sync with `url:` in `_config.yml`.
+- DNS (managed at Squarespace): a `CNAME` record `www` → `mahmoudabdelgalil.github.io`, and for the apex `maabdelg.me` the GitHub Pages `A` records `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153` (optionally `AAAA` `2606:50c0:8000::153` through `2606:50c0:8003::153`), so the apex redirects to `www`.
+- In the repository settings under Pages, the custom domain is `www.maabdelg.me` with "Enforce HTTPS" on. Verifying the domain in the GitHub account settings (Pages → Add a domain, a `TXT` record) protects it from takeover.
 
 ## Remaining TODOs
 
@@ -54,8 +53,8 @@ Then open http://localhost:4000. Or, with Docker: `docker compose up`, then open
 - [ ] `_data/socials.yml`: GitHub and ORCID if desired (Scholar, LinkedIn and ResearchGate are set).
 - [ ] `_projects/*.md`: review the three research-thrust drafts; add a figure to each (`img:` field).
 - [ ] `_teachings/mae341-spring2027.md`: room and section times.
-- [ ] `_config.yml`: final `url:`; optionally enable analytics.
-- [ ] Lab name (deferred): when chosen, set `title:` in `_config.yml`, reinstate a title on the home page (`show_title` in `_pages/about.md`, plus a subtitle with the expansion), adjust the footer/description/keywords, and register the matching domain.
+- [ ] `_config.yml`: optionally enable analytics.
+- [ ] Lab name (deferred): when chosen, set `title:` in `_config.yml`, reinstate a title on the home page (`show_title` in `_pages/about.md`, plus a subtitle with the expansion), and adjust the footer/description/keywords.
 ## License
 
 MIT, inherited from al-folio; see `LICENSE`.
