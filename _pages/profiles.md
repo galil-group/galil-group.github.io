@@ -28,6 +28,6 @@ profiles:
 
 ## Prospective students
 
-Mahmoud Abdelgalil is recruiting PhD students to begin in Fall 2027. Ideal candidates have a strong background in mathematics (analysis, linear algebra, differential equations, and ideally differential geometry or probability), an interest in control, optimization, or learning for autonomous systems, and comfort with at least one of MATLAB, Python, or C++.
+We are always on the lookout for outstanding PhD students. Ideal candidates have a strong background in mathematics (analysis, linear algebra, differential equations), an interest in control, optimization, or learning for autonomous systems, and comfort with at least one of MATLAB, Python, or C++.
 
-To apply, submit an application to the [UB MAE PhD program](https://engineering.buffalo.edu/mechanical-aerospace.html) and mention Mahmoud Abdelgalil in your statement. You are welcome to email a CV and a short description of your research interests to maabdelg [at] buffalo [dot] edu beforehand. Please use the subject line "Prospective PhD student" and be specific about which of the group's research thrusts interests you.
+If you're interested to join us, feel free to email a CV and a short description of your research interests to maabdelg [at] buffalo [dot] edu. Please use the subject line "\[Prospective PhD Student\]" and specify which of the group's research thrusts interests you.
