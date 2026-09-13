@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-Research-group website of Mahmoud Abdelgalil (UB MAE), built on al-folio v1 (Jekyll). See `README.md` for where content lives, local preview, deployment, and the open TODO list.
+Research-group website of Mahmoud Abdelgalil (UB MAE), built on al-folio v1 (Jekyll). Content lives in `_pages/`, `_projects/`, `_teachings/`, `_news/`, `_bibliography/papers.bib`, `_data/` and `assets/`; site settings are in `_config.yml`.
 
 ## How this repo is put together
 
@@ -23,4 +23,4 @@ bundle exec jekyll build   # output in _site/
 docker compose up          # alternative preview at http://localhost:8080
 ```
 
-Deployment is automatic: pushing to `main`/`master` runs `.github/workflows/deploy.yml` (build, purge CSS with `purgecss.config.js`, publish `_site` to the `gh-pages` branch).
+Deployment is automatic: pushing to `main`/`master` runs `.github/workflows/deploy.yml` (build, purge CSS with `purgecss.config.js`, publish `_site` to the `gh-pages` branch). The site is served at the custom domain https://www.maabdelg.me: the `CNAME` file must stay in the repo (each deploy replaces the whole `gh-pages` branch) and match `url:` in `_config.yml`. DNS is managed at Squarespace (`www` CNAME to `mahmoudabdelgalil.github.io`, apex A records to GitHub Pages).
