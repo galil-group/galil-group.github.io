@@ -8,41 +8,60 @@ cv:
     Assistant Professor at the University at Buffalo (SUNY). Research in geometric control,
     optimal mass transport, stochastic optimization, and multi-agent systems for autonomy.
 
+  # Section names are matched literally by the al_folio_cv template: "Experience" and "Education"
+  # render as dated entries; any other name renders only `bullet:` (or `label:`/`details:`) items.
   sections:
-    Appointments:
+    Experience:
       - company: University at Buffalo (SUNY)
-        position: Assistant Professor, Mechanical and Aerospace Engineering
+        position: Assistant Professor, Department of Mechanical and Aerospace Engineering
         location: Buffalo, NY
         start_date: 2026-08
         end_date: present
         summary: Hired under the Disciplinary Excellence in Autonomy initiative.
       - company: University of California, San Diego
-        position: Postdoctoral Scholar, Electrical and Computer Engineering
+        position: Postdoctoral Researcher, Department of Electrical and Computer Engineering
         location: La Jolla, CA
         start_date: 2023-04
         end_date: 2026-06
         summary: Advisor, Prof. Jorge I. Poveda.
+      - company: University of California, Irvine
+        position: Research Assistant, Department of Mechanical and Aerospace Engineering
+        location: Irvine, CA
+        start_date: 2020-03
+        end_date: 2023-03
 
     Education:
       - institution: University of California, Irvine
         location: Irvine, CA
         area: Mechanical and Aerospace Engineering
-        studyType: PhD
-        start_date: 2018
-        end_date: 2023
+        studyType: Ph.D.
+        date: 2023-03
         summary: Co-advised by Prof. Haithem Taha and Prof. Tryphon Georgiou.
       - institution: University of California, Irvine
         location: Irvine, CA
         area: Mechanical and Aerospace Engineering
-        studyType: MSc
-        start_date: 2018
-        end_date: 2020
-      - institution: Zewail City of Science and Technology
+        studyType: M.Sc.
+        date: 2020-03
+      - institution: Zewail University
         location: Giza, Egypt
-        area: Engineering (inaugural cohort, cum laude)
-        studyType: BSc
-        start_date: 2014
-        end_date: 2018
+        area: Aerospace and Aeronautical Engineering
+        studyType: B.Sc.
+        date: 2018-06
+
+    Invited Talks and Seminars:
+      - bullet: "SIAM Conference on Uncertainty Quantification (invited talk) · _March 2026_"
+      - bullet: "Applied and Computational Mathematics Seminar, Auburn University · _September 2025_"
+      - bullet: "Aerospace Engineering Department Seminar, Georgia Institute of Technology · _September 2025_"
+      - bullet: "MAE Department Seminar, University of California, Irvine · _April 2025_"
+      - bullet: "SOCAM Symposium, University of California, Riverside · _April 2025_"
+      - bullet: "SoCal Control Workshop, University of Southern California · _November 2024_"
+      - bullet: "Conference presentation, American Control Conference · _June 2023_"
+      - bullet: "ECE Department Seminar, University of California, San Diego · _December 2022_"
+      - bullet: "Conference presentation, IEEE Conference on Decision and Control · _December 2022_"
+      - bullet: "SoCal Control Workshop, California Institute of Technology · _October 2022_"
+      - bullet: "MAE Department Seminar, University of California, Irvine · _May 2021_"
+      - bullet: "Mathematics Department Seminar, University of California, Irvine · _January 2021_"
+      - bullet: "SoCal Control Workshop, University of California, San Diego · _January 2020_"
 
     Honors and Awards:
       - title: Best Student Paper Award, American Control Conference
