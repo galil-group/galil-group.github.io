@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: publications
-description: Publications of the DARE Lab, in reverse chronological order.
+description: Publications, in reverse chronological order.
 nav: true
 nav_order: 2
 ---

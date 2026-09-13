@@ -5,9 +5,8 @@ cv:
   location: Buffalo, NY
   image: ""
   summary: >
-    Director of the DARE Lab (Distributed, Adaptive, and Robust Embodied Intelligence) at the
-    University at Buffalo (SUNY). Research in geometric control, optimal mass transport,
-    stochastic optimization, and multi-agent systems for autonomy.
+    Assistant Professor at the University at Buffalo (SUNY). Research in geometric control,
+    optimal mass transport, stochastic optimization, and multi-agent systems for autonomy.
 
   sections:
     Appointments:
@@ -16,7 +15,7 @@ cv:
         location: Buffalo, NY
         start_date: 2026-08
         end_date: present
-        summary: Director, DARE Lab. Hired under the Disciplinary Excellence in Autonomy initiative.
+        summary: Hired under the Disciplinary Excellence in Autonomy initiative.
       - company: University of California, San Diego
         position: Postdoctoral Scholar, Electrical and Computer Engineering
         location: La Jolla, CA

@@ -2,7 +2,7 @@
 layout: page
 title: research
 permalink: /research/
-description: Research thrusts of the DARE Lab. Each thrust links to representative publications.
+description: Research thrusts. Each thrust links to representative publications.
 nav: true
 nav_order: 1
 horizontal: false

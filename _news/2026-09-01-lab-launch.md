@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-The DARE Lab launches at the University at Buffalo. Prof. Abdelgalil joins the Department of Mechanical and Aerospace Engineering as Assistant Professor.
+Prof. Abdelgalil joins the Department of Mechanical and Aerospace Engineering at the University at Buffalo as Assistant Professor; his research group opens in Furnas Hall 107.

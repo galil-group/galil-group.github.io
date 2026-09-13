@@ -2,13 +2,13 @@
 layout: about
 title: about
 permalink: /
+show_title: false
 subtitle: >
-  <b>D</b>istributed, <b>A</b>daptive, and <b>R</b>obust <b>E</b>mbodied Intelligence &middot;
   Department of Mechanical and Aerospace Engineering, University at Buffalo (SUNY)
 
 profile:
   align: right
-  image: prof_pic.jpg # TODO: add your photo (or a lab figure) as assets/img/prof_pic.jpg
+  image: prof_pic.jpg # TODO: add your photo (or a representative figure) as assets/img/prof_pic.jpg
   image_circular: false
   more_info: >
     <p>Prof. Mahmoud Abdelgalil</p>
@@ -30,8 +30,8 @@ latest_posts:
   limit: 3
 ---
 
-The **DARE Lab** develops the mathematical foundations of autonomy. We study how ensembles of dynamical systems, from single robots to large collectives, can be steered, coordinated, and made robust in the presence of uncertainty, adversaries, and limited information. Our work draws on geometric control theory, optimal mass transport, stochastic optimization, and game theory, and it is aimed at autonomous systems that must act reliably in the physical world.
+We develop the mathematical foundations of autonomy. Our group studies how ensembles of dynamical systems, from single robots to large collectives, can be steered, coordinated, and made robust in the presence of uncertainty, adversaries, and limited information. The work draws on geometric control theory, optimal mass transport, stochastic optimization, and game theory, and it is aimed at autonomous systems that must act reliably in the physical world.
 
-The lab is led by [Prof. Mahmoud Abdelgalil](/people/), Assistant Professor in the Department of Mechanical and Aerospace Engineering at the University at Buffalo (SUNY), and is housed in Furnas Hall 107. Our research is supported in part by DARPA.
+The group is led by [Prof. Mahmoud Abdelgalil](/people/), Assistant Professor in the Department of Mechanical and Aerospace Engineering at the University at Buffalo (SUNY), and is housed in Furnas Hall 107. Our research is supported in part by DARPA.
 
 **We are recruiting PhD students.** If you have a strong mathematical background and an interest in control, optimization, or learning for autonomous systems, see the [people page](/people/) for details on how to apply.
