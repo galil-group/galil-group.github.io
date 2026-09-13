@@ -33,7 +33,7 @@ Then open http://localhost:4000. Or, with Docker: `docker compose up`, then open
 
 ## Deployment (GitHub Pages)
 
-1. The repository is `galil-group/galil-group.github.io`. Because it is named `<owner>.github.io`, GitHub Pages serves it at the domain root, which is why `baseurl:` is blank. (Under any other repository name the site is served at `/<repo>/` and needs `baseurl: /<repo>`.)
+1. The repository is `mahmoudabdelgalil/mahmoudabdelgalil.github.io`. Because it is named `<owner>.github.io`, GitHub Pages serves it at the domain root (https://mahmoudabdelgalil.github.io/), which is why `baseurl:` is blank. (Under any other repository name the site is served at `/<repo>/` and needs `baseurl: /<repo>`.)
 2. On every push to `main`/`master`, `.github/workflows/deploy.yml` builds the site and pushes the output to the `gh-pages` branch.
 3. In the repository settings under Pages, set the source to **Deploy from a branch → `gh-pages` / root**.
 4. In `_config.yml`, set `url:` to the final address and leave `baseurl:` blank.
