@@ -9,7 +9,7 @@ Built with [Jekyll](https://jekyllrb.com/) on [al-folio](https://github.com/alsh
 | What                                         | File(s)                                             |
 | -------------------------------------------- | --------------------------------------------------- |
 | Site settings, feature flags, plugin list    | `_config.yml`                                       |
-| Home page / people page / PI bio             | `_pages/about.md`, `_pages/profiles.md`, `_pages/pi.md` |
+| Home page / team page / PI bio               | `_pages/about.md`, `_pages/profiles.md`, `_pages/pi.md` |
 | Research thrusts                             | `_projects/*.md`                                    |
 | Courses                                      | `_teachings/*.md`                                   |
 | News items                                   | `_news/*.md`                                        |
@@ -47,7 +47,7 @@ Then open http://localhost:4000. Or, with Docker: `docker compose up`, then open
 
 ## Remaining TODOs
 
-- [ ] `assets/img/prof_pic.jpg`: your photo, or a lab figure, for the landing page and people page.
+- [ ] `assets/img/prof_pic.jpg`: your photo, or a lab figure, for the landing page and team page.
 - [ ] `assets/pdf/cv.pdf`: your CV. The CV links are disabled until it exists; then uncomment `cv_pdf` in `_data/socials.yml` and `_pages/cv.md`, and re-add the link in `_pages/pi.md`.
 - [ ] `_bibliography/papers.bib`: paste your BibTeX entries (instructions inside the file); mark a handful with `selected={true}` for the landing page.
 - [ ] `_data/socials.yml`: GitHub and ORCID if desired (Scholar, LinkedIn and ResearchGate are set).

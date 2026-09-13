@@ -1,7 +1,7 @@
 ---
 layout: profiles
-permalink: /people/
-title: people
+permalink: /team/
+title: team
 description: Members of the group.
 nav: true
 nav_order: 3

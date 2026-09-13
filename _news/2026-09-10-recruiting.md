@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-We are recruiting PhD students for Fall 2027. See the [people page](/people/) for details.
+We are recruiting PhD students for Fall 2027. See the [team page](/team/) for details.
