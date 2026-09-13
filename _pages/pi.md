@@ -6,4 +6,4 @@ Mahmoud Abdelgalil leads a research group in the Department of Mechanical and Ae
 
 Prior to UB, he was a postdoctoral scholar in Electrical and Computer Engineering at UC San Diego with Prof. Jorge I. Poveda (2023 to 2026). He received his PhD (2023) and MSc (2020) in Mechanical and Aerospace Engineering from UC Irvine, co-advised by Profs. Haithem Taha and Tryphon Georgiou, and his BSc (2018, cum laude) from Zewail City of Science and Technology, as a member of its inaugural cohort. His recognitions include the 2023 American Control Conference Best Student Paper Award, the Henry Samueli Fellowship, and the Holmes Endowed Fellowship.
 
-[Curriculum vitae (PDF)](/assets/pdf/cv.pdf) · [Email](mailto:mabdelga@buffalo.edu)
+[Curriculum vitae (PDF)](/assets/pdf/cv.pdf) · Email: maabdelg [at] buffalo [dot] edu

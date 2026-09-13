@@ -14,7 +14,7 @@ profile:
     <p>Prof. Mahmoud Abdelgalil</p>
     <p>1006 Furnas Hall</p>
     <p>Buffalo, NY 14260</p>
-    <p>mabdelga@buffalo.edu</p>
+    <p>maabdelg [at] buffalo [dot] edu</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true

@@ -1,7 +1,7 @@
 cv:
   name: Mahmoud Abdelgalil
   label: Assistant Professor, Mechanical and Aerospace Engineering
-  email: mabdelga@buffalo.edu
+  email: maabdelg [at] buffalo [dot] edu # shown as plain text on the CV page; written this way to deter scrapers
   location: Buffalo, NY
   image: ""
   summary: >

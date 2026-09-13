@@ -1,6 +1,6 @@
 # Social/contact links shown in the footer and contact block, in this order.
 cv_pdf: /assets/pdf/cv.pdf # TODO: place your CV at assets/pdf/cv.pdf
-email: mabdelga@buffalo.edu
+email: maabdelg@buffalo.edu # rendered click-to-copy, never as plain text, because protect_email is on
 scholar_userid: # TODO: your Google Scholar ID (the string after user= in your profile URL)
 # github_username: # TODO: lab or personal GitHub username
 # linkedin_username: # TODO
