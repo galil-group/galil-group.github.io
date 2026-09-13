@@ -32,6 +32,6 @@ latest_posts:
 
 We develop the mathematical foundations of autonomy. Our group studies how ensembles of dynamical systems, from single robots to large collectives, can be steered, coordinated, and made robust in the presence of uncertainty, adversaries, and limited information. The work draws on geometric control theory, optimal mass transport, stochastic optimization, and game theory, and it is aimed at autonomous systems that must act reliably in the physical world.
 
-The group is led by [Mahmoud Abdelgalil](/people/), Assistant Professor in the Department of Mechanical and Aerospace Engineering at the University at Buffalo (SUNY). Our research is supported in part by DARPA.
+The group is led by [Mahmoud Abdelgalil](/people/), Assistant Professor in the Department of Mechanical and Aerospace Engineering at the University at Buffalo (SUNY).
 
 **We are recruiting PhD students.** If you have a strong mathematical background and an interest in control, optimization, or learning for autonomous systems, see the [people page](/people/) for details on how to apply.

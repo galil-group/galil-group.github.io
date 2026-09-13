@@ -55,8 +55,6 @@ Then open http://localhost:4000. Or, with Docker: `docker compose up`, then open
 - [ ] `_teachings/mae341-fall2026.md`: room and second-section time.
 - [ ] `_config.yml`: final `url:`; optionally enable analytics.
 - [ ] Lab name (deferred): when chosen, set `title:` in `_config.yml`, reinstate a title on the home page (`show_title` in `_pages/about.md`, plus a subtitle with the expansion), adjust the footer/description/keywords, and register the matching domain.
-- [ ] Verify DYNAMO publicity provisions before adding a DARPA logo; the textual funding acknowledgment on the landing page is standard.
-
 ## License
 
 MIT, inherited from al-folio; see `LICENSE`.
