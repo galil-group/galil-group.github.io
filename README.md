@@ -52,7 +52,7 @@ Then open http://localhost:4000. Or, with Docker: `docker compose up`, then open
 - [ ] `assets/pdf/cv.pdf`: your CV. The CV links are disabled until it exists; then uncomment `cv_pdf` in `_data/socials.yml` and `_pages/cv.md`, and re-add the link in `_pages/pi.md`.
 - [ ] `_bibliography/papers.bib`: paste your BibTeX entries (instructions inside the file); mark a handful with `selected={true}` for the landing page.
 - [ ] `_data/socials.yml`: GitHub and ORCID if desired (Scholar, LinkedIn and ResearchGate are set).
-- [ ] `_projects/*.md`: review the four research-thrust drafts; add a figure to each (`img:` field).
+- [ ] `_projects/*.md`: review the three research-thrust drafts; add a figure to each (`img:` field).
 - [ ] `_teachings/mae341-spring2027.md`: room and section times.
 - [ ] `_config.yml`: final `url:`; optionally enable analytics.
 - [ ] Lab name (deferred): when chosen, set `title:` in `_config.yml`, reinstate a title on the home page (`show_title` in `_pages/about.md`, plus a subtitle with the expansion), adjust the footer/description/keywords, and register the matching domain.
