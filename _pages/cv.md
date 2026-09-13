@@ -6,6 +6,4 @@ nav: true
 nav_order: 5
 # cv_pdf: /assets/pdf/cv.pdf # disabled until assets/pdf/cv.pdf exists; uncomment to show the PDF icon
 cv_format: rendercv # options: rendercv, jsonresume
-toc:
-  sidebar: left
 ---
