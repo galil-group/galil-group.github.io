@@ -34,6 +34,12 @@
     #navbar .navbar-nav .sidebar-social a { color: var(--global-text-color); }
     #navbar .navbar-nav .sidebar-social a:hover { color: var(--global-theme-color); }
   }
+  @media (max-width: 575.98px) {
+    /* Phones: the opened menu is a tall panel, so make it opaque (theme default 0.95 lets the page show
+       through) and give the icons their own row, aligned with the links under a divider. */
+    #navbar.navbar { opacity: 1; }
+    #navbar .navbar-nav .sidebar-social { padding: 0.75rem 0 0.5rem; margin-top: 0.5rem; border-top: 1px solid var(--global-divider-color); gap: 1.4rem; font-size: 1.35rem; }
+  }
   /* No footer: the theme's footer only holds the copyright line. */
   footer[role="contentinfo"] { display: none; }
 </style>
