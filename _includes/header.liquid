@@ -1,7 +1,9 @@
 {% comment %}
   Local override of al_folio_core's _includes/header.liquid (identical to the version in al_folio_core 1.0.15).
-  Only change: the navbar brand (the site owner's name) is rendered on every page. Upstream wraps it in
-  `if page.permalink != '/'`, hiding it on the home page and showing optional navbar social icons there instead.
+  Two changes to the navbar brand (the site owner's name):
+  1. It is rendered on every page. Upstream wraps it in `if page.permalink != '/'`, hiding it on the home page
+     and showing optional navbar social icons there instead.
+  2. The first name is not bold (upstream wraps it in <span class="font-weight-bold">).
   When bumping al_folio_core, diff this file against the gem's copy.
 {% endcomment %}
 <header>
@@ -11,9 +13,7 @@
       <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
         {% if site.title == 'blank' %}
           {% if site.first_name %}
-            <span class="font-weight-bold">
-              {{- site.first_name -}}
-            </span>
+            {{- site.first_name -}}
           {% endif %}
           {% if site.middle_name %}
             {{- site.middle_name -}}
