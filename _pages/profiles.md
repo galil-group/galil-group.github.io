@@ -12,7 +12,7 @@ profiles:
     content: pi.md
     image_circular: false
     more_info: >
-      <p>1017 Furnas Hall</p>
+      <p>1006 Furnas Hall</p>
       <p>Buffalo, NY 14260</p>
       <p>mabdelga@buffalo.edu</p>
 ---

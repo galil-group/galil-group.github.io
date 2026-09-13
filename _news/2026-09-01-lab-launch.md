@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Prof. Abdelgalil joins the Department of Mechanical and Aerospace Engineering at the University at Buffalo as Assistant Professor; his research group opens in Furnas Hall 107.
+Prof. Abdelgalil joins the Department of Mechanical and Aerospace Engineering at the University at Buffalo as Assistant Professor and is starting his research group.
