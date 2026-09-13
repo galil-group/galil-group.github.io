@@ -5,8 +5,9 @@
      and showing optional navbar social icons there instead.
   2. The first name is not bold (upstream wraps it in <span class="font-weight-bold">).
   3. The style block below turns the top navbar into a fixed left sidebar on screens at least 992px wide
-     (name kept on one line at 18.5px; social icons listed under the menu links); narrower screens keep the
-     top bar with its menu button, and the icons sit in the top bar next to the links (inside the menu on phones).
+     (name kept on one line at 18.5px; social icons listed under the menu links). Below 992px the bar is always
+     collapsed: name, theme toggle and menu button on one row, and the menu opens as a panel with the links and
+     the social icons.
   4. The style block also hides the site footer (the theme's "© Copyright" bar) on every page.
   5. The theme toggle is outside the collapsible menu (upstream puts it in the menu list), so on phones it
      sits in the top bar next to the menu button; in the sidebar it is still at the bottom.
@@ -31,21 +32,27 @@
     #navbar .navbar-nav .sidebar-social a:hover { color: var(--global-theme-color); }
   }
   @media (max-width: 991.98px) {
-    /* Top-bar mode: icons next to the menu links (inside the collapsed menu on phones). */
-    #navbar .navbar-nav .sidebar-social { display: flex; align-items: center; gap: 0.6rem; padding: 0 0.5rem; font-size: 1.05rem; }
+    /* Below the sidebar breakpoint, use the collapsed layout at every width: a top row of name, theme toggle
+       and menu button, with the opened menu as a panel below. The theme itself only collapses below 576px, so
+       its collapsed layout is replicated here. Its expanded-menu display rule is !important inside a cascade
+       layer, which an unlayered !important cannot override, so the closed menu is hidden with height and
+       visibility instead of display. */
+    #navbar > .container { flex-wrap: wrap; }
+    #navbar .navbar-brand { margin-right: 0; }
+    #navbar .nav-theme-toggle { order: 1; margin-left: auto; margin-right: 0.75rem; position: relative; top: -2px; } /* the menu button's bars sit 2px above its centre */
+    #navbar .navbar-toggler { display: block; order: 2; margin-left: 0; }
+    #navbar .navbar-collapse { order: 3; flex-basis: 100%; }
+    #navbar .navbar-collapse:not(.show) { height: 0 !important; overflow: hidden !important; visibility: hidden !important; }
+    #navbar .navbar-nav { flex-direction: column; margin-left: 0 !important; align-items: flex-start; }
+    #navbar .navbar-nav .nav-link { padding: 0.5rem 0; }
+    #navbar.navbar { opacity: 1; } /* theme default 0.95 lets the page show through the opened menu */
+    #navbar .navbar-nav .sidebar-social { display: flex; align-items: center; padding: 0.75rem 0 0.5rem; margin-top: 0.5rem; border-top: 1px solid var(--global-divider-color); gap: 1.4rem; font-size: 1.35rem; }
     #navbar .navbar-nav .sidebar-social a { color: var(--global-text-color); }
     #navbar .navbar-nav .sidebar-social a:hover { color: var(--global-theme-color); }
   }
-  @media (max-width: 575.98px) {
-    /* Phones: the opened menu is a tall panel, so make it opaque (theme default 0.95 lets the page show
-       through) and give the icons their own row, aligned with the links under a divider. */
-    #navbar.navbar { opacity: 1; }
-    #navbar .navbar-nav .sidebar-social { padding: 0.75rem 0 0.5rem; margin-top: 0.5rem; border-top: 1px solid var(--global-divider-color); gap: 1.4rem; font-size: 1.35rem; }
-    /* Top row: name, theme toggle, menu button; the opened menu wraps below. */
-    #navbar .navbar-brand { margin-right: auto; }
-    #navbar .nav-theme-toggle { order: 1; margin-right: 0.5rem; }
-    #navbar .navbar-toggler { order: 2; }
-    #navbar .navbar-collapse { order: 3; }
+  @media (min-width: 576px) and (max-width: 991.98px) {
+    /* At these widths the theme lays the toggle's icon out 4px lower inside its button; lift it to match. */
+    #navbar .nav-theme-toggle { top: -6px; }
   }
   #navbar .nav-theme-toggle { display: flex; align-items: center; }
   /* No footer: the theme's footer only holds the copyright line. */
