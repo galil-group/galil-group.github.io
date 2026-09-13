@@ -1,7 +1,8 @@
 # Social/contact links shown in the footer and contact block, in this order.
 cv_pdf: /assets/pdf/cv.pdf # TODO: place your CV at assets/pdf/cv.pdf
-email: maabdelg@buffalo.edu # rendered click-to-copy, never as plain text, because protect_email is on
-scholar_userid: # TODO: your Google Scholar ID (the string after user= in your profile URL)
+# No email entry: jekyll-socials renders it as a plain mailto: link that scrapers can read, and
+# protect_email does not apply to it. The address appears as "[at]/[dot]" text in the pages instead.
+# scholar_userid: # TODO: your Google Scholar ID (the string after user= in your profile URL)
 # github_username: # TODO: lab or personal GitHub username
 # linkedin_username: # TODO
 # orcid_id: # TODO
