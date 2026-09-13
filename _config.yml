@@ -97,7 +97,7 @@ footer_fixed: true
 search_enabled: false # hides the "ctrl k" site search in the navbar
 socials_in_search: false # true would put the email into the search index, only hex-encoded
 posts_in_search: true
-bib_search: true
+bib_search: false # "Type to filter" box on the publications page
 
 # Dimensions
 max_width: 930px
