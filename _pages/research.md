@@ -2,7 +2,7 @@
 layout: page
 title: research
 permalink: /research/
-description: Research thrusts. Each thrust links to representative publications.
+description: Research thrusts.
 nav: true
 nav_order: 1
 horizontal: false

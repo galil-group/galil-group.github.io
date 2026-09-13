@@ -8,7 +8,7 @@ nav_order: 3
 
 profiles:
   - align: right
-    image: prof_pic.jpg # TODO: assets/img/prof_pic.jpg
+    image: prof_pic.jpg
     content: pi.md
     image_circular: false
   # No image and no `content:` file: the profiles layout renders this page's own text (below) for this entry.

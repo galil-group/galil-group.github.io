@@ -6,7 +6,7 @@ show_title: false
 
 profile:
   align: right
-  image: prof_pic.jpg # TODO: add your photo (or a representative figure) as assets/img/prof_pic.jpg
+  image: prof_pic.jpg
   image_circular: false
   more_info: >
     <p>Mahmoud Abdelgalil</p>
