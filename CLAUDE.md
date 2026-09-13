@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-Research-group website of Prof. Mahmoud Abdelgalil (UB MAE), built on al-folio v1 (Jekyll). See `README.md` for where content lives, local preview, deployment, and the open TODO list.
+Research-group website of Mahmoud Abdelgalil (UB MAE), built on al-folio v1 (Jekyll). See `README.md` for where content lives, local preview, deployment, and the open TODO list.
 
 ## How this repo is put together
 

@@ -1,6 +1,6 @@
 # Research-group website
 
-Website of Prof. Mahmoud Abdelgalil's research group, Department of Mechanical and Aerospace Engineering, University at Buffalo (SUNY).
+Website of Mahmoud Abdelgalil's research group, Department of Mechanical and Aerospace Engineering, University at Buffalo (SUNY).
 
 Built with [Jekyll](https://jekyllrb.com/) on [al-folio](https://github.com/alshedivat/al-folio) v1. In v1, layouts, styles and scripts ship as version-pinned `al_*` gems (see `Gemfile`), so this repository holds only configuration and content. Upstream documentation: <https://github.com/alshedivat/al-folio/tree/main/docs>.
 
