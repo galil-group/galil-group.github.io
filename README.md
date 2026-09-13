@@ -48,9 +48,9 @@ Then open http://localhost:4000. Or, with Docker: `docker compose up`, then open
 ## Remaining TODOs
 
 - [ ] `assets/img/prof_pic.jpg`: your photo, or a lab figure, for the landing page and people page.
-- [ ] `assets/pdf/cv.pdf`: your CV (linked from the CV page, the PI bio and the footer).
+- [ ] `assets/pdf/cv.pdf`: your CV. The CV links are disabled until it exists; then uncomment `cv_pdf` in `_data/socials.yml` and `_pages/cv.md`, and re-add the link in `_pages/pi.md`.
 - [ ] `_bibliography/papers.bib`: paste your BibTeX entries (instructions inside the file); mark a handful with `selected={true}` for the landing page.
-- [ ] `_data/socials.yml`: Google Scholar ID, GitHub, ORCID, LinkedIn as desired.
+- [ ] `_data/socials.yml`: GitHub and ORCID if desired (Scholar, LinkedIn and ResearchGate are set).
 - [ ] `_projects/*.md`: review the four research-thrust drafts; add a figure to each (`img:` field).
 - [ ] `_teachings/mae341-fall2026.md`: room and second-section time.
 - [ ] `_config.yml`: final `url:`; optionally enable analytics.
