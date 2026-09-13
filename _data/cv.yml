@@ -63,10 +63,11 @@ cv:
       - bullet: "Mathematics Department Seminar, University of California, Irvine · _January 2021_"
       - bullet: "SoCal Control Workshop, University of California, San Diego · _January 2020_"
 
+    # The awards template shows `date:` (first year only) and ignores `year:`; entries render in the order listed.
     Honors and Awards:
       - title: Best Student Paper Award, American Control Conference
-        year: 2023
-      - title: Henry Samueli Fellowship
-        year: ""
+        date: 2023
       - title: Holmes Endowed Fellowship
-        year: ""
+        date: 2021 # AY 2021-2022
+      - title: Henry Samueli Fellowship
+        date: 2018 # AY 2018-2019
