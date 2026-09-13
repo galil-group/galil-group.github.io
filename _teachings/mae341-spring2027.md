@@ -8,7 +8,7 @@ instructor: Mahmoud Abdelgalil
 year: 2027
 term: Spring
 location: University at Buffalo # TODO: room
-time: "Section 1: MWF 9:00 AM; Section 2: TBD" # TODO: finalize second section
+time: TBD # TODO: fill in once the Spring 2027 schedule is set
 course_id: mae341-spring-2027
 schedule: [] # optionally populate week-by-week topics and materials
 ---
