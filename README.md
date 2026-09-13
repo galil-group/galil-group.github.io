@@ -19,6 +19,7 @@ Built with [Jekyll](https://jekyllrb.com/) on [al-folio](https://github.com/alsh
 | Venue badges, coauthor links                 | `_data/venues.yml`, `_data/coauthors.yml`           |
 | Images and PDFs                              | `assets/img/`, `assets/pdf/`                        |
 | Local override of the gem's home-page layout | `_layouts/about.liquid` (title-less home page)      |
+| Local override of the gem's navbar           | `_includes/header.liquid` (name shown on home page) |
 
 Plugins must be listed in **both** `Gemfile` and the `plugins:` list in `_config.yml`; a plugin in only one is silently inert. When bumping `al_folio_core`, compare `_layouts/about.liquid` against the gem's new `about.liquid`.
 
