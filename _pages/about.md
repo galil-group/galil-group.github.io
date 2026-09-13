@@ -40,6 +40,6 @@ latest_posts:
 
 I am an Assistant Professor of Mechanical and Aerospace Engineering at the University at Buffalo (SUNY), where I joined the faculty in Fall 2026. Before coming to Buffalo, I was a postdoctoral researcher at UC San Diego, and I received my PhD from UC Irvine. More about my background is on the [team page](/team/).
 
-My group studies how ensembles of dynamical systems, from single robots to large collectives, can be steered, coordinated, and made robust in the presence of uncertainty, adversaries, and limited information. Our work draws on geometric control theory, optimal mass transport, and stochastic optimization, and it is aimed at autonomous systems that must act reliably in the physical world.
+My group studies how ensembles of dynamical systems, from single robots to large collectives, can be steered, coordinated, and made robust in the presence of uncertainty, adversaries, and limited information. Our work draws on geometric control theory, optimal mass transport, and stochastic analysis, and it is aimed at autonomous systems that must act reliably in the physical world.
 
 **I am recruiting PhD students.** If you have a strong mathematical background and an interest in control, optimization, or learning for autonomous systems, see the [team page](/team/) for details on how to apply.
