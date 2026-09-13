@@ -33,7 +33,7 @@ latest_posts:
 <style>
   /* Keep each line of the contact block under the photo on one line: the photo column is 30% of the page,
      so shrink the monospace font with the window (13px max). Phones stack the photo full width. */
-  .profile .more-info p { white-space: nowrap; }
+  .profile .more-info p { display: block; white-space: nowrap; } /* theme uses inline-block, which pairs short lines */
   @media (min-width: 576px) { .profile .more-info { font-size: min(13px, 1.4vw); } }
   @media (max-width: 575.98px) { .profile .more-info { font-size: 13px; } }
 </style>

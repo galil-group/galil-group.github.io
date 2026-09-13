@@ -21,7 +21,7 @@ profiles:
 
 <style>
   /* Same rule as on the home page: keep each line of the contact block under the photo on one line. */
-  .profile .more-info p { white-space: nowrap; }
+  .profile .more-info p { display: block; white-space: nowrap; } /* theme uses inline-block, which pairs short lines */
   @media (min-width: 576px) { .profile .more-info { font-size: min(13px, 1.4vw); } }
   @media (max-width: 575.98px) { .profile .more-info { font-size: 13px; } }
 </style>
