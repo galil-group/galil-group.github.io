@@ -48,6 +48,22 @@
   #navbar .nav-theme-toggle { display: flex; align-items: center; }
   /* CV page: the entry lists carry date ribbons; drop the default list bullets and indent. */
   .cv ul.list-group { list-style: none; padding-left: 0; }
+  /* CV ribbons: a fixed 6.75rem ribbon column (fits "2026 - PRESENT") flush with the section heading, instead of
+     the template's col-2 (a sixth of the card). The theme shifts .date-column 15px left, and the text column's
+     .ml-md-4 (1.5rem at >=768px) is a layered !important that cannot be overridden, so it serves as the gap there;
+     below 768px the gap is 1rem of padding. The ribbon is lowered 0.5rem to line up with the title. */
+  .cv ul.list-group > .list-group-item { padding-left: 0; padding-right: 0; }
+  .cv ul.list-group > .list-group-item > .row { flex-wrap: nowrap; margin-left: 0; margin-right: 0; }
+  .cv ul.list-group > .list-group-item > .row > :first-child { flex: 0 0 6.75rem; width: 6.75rem; max-width: 6.75rem; margin-top: 0.5rem; padding: 0; transform: none; text-align: center; }
+  .cv ul.list-group > .list-group-item > .row > :first-child .table-cv { width: 100%; border-collapse: collapse; }
+  .cv ul.list-group > .list-group-item > .row > :first-child .table-cv td { padding: 0; }
+  .cv ul.list-group > .list-group-item > .row > :first-child .badge { display: block; width: 100%; }
+  .cv ul.list-group > .list-group-item > .row > :first-child .location { margin: 0.3rem 0 0; }
+  .cv ul.list-group > .list-group-item > .row > :last-child { flex: 1 1 0; min-width: 0; max-width: none; padding-left: 1rem; padding-right: 0; }
+  .cv ul.list-group > .list-group-item > .row > :last-child > h6 { margin-left: 0; }
+  @media (min-width: 768px) {
+    .cv ul.list-group > .list-group-item > .row > :last-child { padding-left: 0; }
+  }
   /* No footer: the theme's footer only holds the copyright line. */
   footer[role="contentinfo"] { display: none; }
 </style> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Mahmoud Abdelgalil </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/research/">research </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/team/">team </a> </li> <li class="nav-item "> <a class="nav-link" href="/teaching/">teaching </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">CV </a> </li> <li class="nav-item sidebar-social"> <a href="https://scholar.google.com/citations?user=OPIuOOcAAAAJ" title="Scholar userid" rel="external nofollow noopener" target="_blank"><i class="ai ai-google-scholar"></i></a> <a href="https://www.researchgate.net/profile/Mahmoud-Abdelgalil/" title="Research gate profile" rel="external nofollow noopener" target="_blank"><i class="ai ai-researchgate"></i></a> <a href="https://www.linkedin.com/in/maabdelg" title="Linkedin username" rel="external nofollow noopener" target="_blank"><i class="fa-brands fa-linkedin"></i></a> </li> </ul> </div> <div class="toggle-container nav-theme-toggle"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <div class="header-bar"> <h1>Notes</h1> <h2>research notes and expository posts</h2> </div> <ul class="post-list"> </ul> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Mahmoud Abdelgalil. </div> </footer> <script>
