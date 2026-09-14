@@ -38,6 +38,12 @@ latest_posts:
   @media (max-width: 575.98px) { .profile .more-info { font-size: 13px; } }
   /* Next to the sidebar navigation (>= 992px) the photo column is narrower, so scale the font with the remaining width. */
   @media (min-width: 992px) { .profile .more-info { font-size: min(13px, calc((100vw - 240px) * 0.0146)); } }
+  /* The photo and contact block run past the intro text; let "news" start right after the text, with the
+     news list narrowed beside the contact block (flow-root), instead of leaving a blank band until the photo ends. */
+  article > .clearfix::after { clear: none; }
+  article > .news { display: flow-root; }
+  /* News date column: fit the date instead of the theme's fixed 20% (inline style, hence !important). */
+  .news table tr > :first-child { width: 1% !important; white-space: nowrap; padding-right: 1.5rem; }
 </style>
 
 I am an Assistant Professor of Mechanical and Aerospace Engineering at the University at Buffalo (SUNY), where I joined the faculty in Fall 2026. Before coming to Buffalo, I was a postdoctoral researcher at UC San Diego, and I received my PhD from UC Irvine.
