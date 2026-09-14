@@ -57,6 +57,22 @@
   #navbar .nav-theme-toggle { display: flex; align-items: center; }
   /* CV page: the entry lists carry date ribbons; drop the default list bullets and indent. */
   .cv ul.list-group { list-style: none; padding-left: 0; }
+  /* CV ribbons: a fixed 6.75rem ribbon column (fits "2026 - PRESENT") flush with the section heading, instead of
+     the template's col-2 (a sixth of the card). The theme shifts .date-column 15px left, and the text column's
+     .ml-md-4 (1.5rem at >=768px) is a layered !important that cannot be overridden, so it serves as the gap there;
+     below 768px the gap is 1rem of padding. The ribbon is lowered 0.5rem to line up with the title. */
+  .cv ul.list-group > .list-group-item { padding-left: 0; padding-right: 0; }
+  .cv ul.list-group > .list-group-item > .row { flex-wrap: nowrap; margin-left: 0; margin-right: 0; }
+  .cv ul.list-group > .list-group-item > .row > :first-child { flex: 0 0 6.75rem; width: 6.75rem; max-width: 6.75rem; margin-top: 0.5rem; padding: 0; transform: none; text-align: center; }
+  .cv ul.list-group > .list-group-item > .row > :first-child .table-cv { width: 100%; border-collapse: collapse; }
+  .cv ul.list-group > .list-group-item > .row > :first-child .table-cv td { padding: 0; }
+  .cv ul.list-group > .list-group-item > .row > :first-child .badge { display: block; width: 100%; }
+  .cv ul.list-group > .list-group-item > .row > :first-child .location { margin: 0.3rem 0 0; }
+  .cv ul.list-group > .list-group-item > .row > :last-child { flex: 1 1 0; min-width: 0; max-width: none; padding-left: 1rem; padding-right: 0; }
+  .cv ul.list-group > .list-group-item > .row > :last-child > h6 { margin-left: 0; }
+  @media (min-width: 768px) {
+    .cv ul.list-group > .list-group-item > .row > :last-child { padding-left: 0; }
+  }
   /* No footer: the theme's footer only holds the copyright line. */
   footer[role="contentinfo"] { display: none; }
 </style>
